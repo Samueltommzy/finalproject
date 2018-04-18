@@ -13,6 +13,7 @@ import { SourcesListComponent } from './sources-list/sources-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { SourceHeadlineComponent } from './source-headline/source-headline.component';
 import { CountryHeadlineComponent } from './country-headline/country-headline.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 import { NewsApiService } from './news-api.service';
 import { UIRouterModule } from '@uirouter/angular';
@@ -34,7 +35,8 @@ import { LogUpdateService } from './log-update.service';
     SourcesListComponent, 
     FooterComponent,
     SourceHeadlineComponent, 
-    CountryHeadlineComponent
+    CountryHeadlineComponent,
+    SpinnerComponent
   ],
   imports: [
     RouterModule,

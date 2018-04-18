@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { UIROUTER_DIRECTIVES } from '@uirouter/angular';
 
 @Component({
@@ -6,6 +6,13 @@ import { UIROUTER_DIRECTIVES } from '@uirouter/angular';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit{
   title = 'Headlines';
+  showSpinner : any;
+  constructor(){
+  
+  }
+  ngAfterViewInit(){
+
+  }
 }

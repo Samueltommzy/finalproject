@@ -6,9 +6,9 @@ import { NewsComponent } from './news/news.component';
 import { SourcesListComponent } from './sources-list/sources-list.component';
 import { SourceHeadlineComponent } from './source-headline/source-headline.component';
 import { CountryHeadlineComponent } from './country-headline/country-headline.component'
+
 import { UIRouterModule } from '@uirouter/angular';
 import { NewsApiService } from './news-api.service';
-// import { ValueServiceService } from './value-service.service'
 import { StateService, Transition } from "@uirouter/angular";
 import { AppComponent } from './app.component';
 
