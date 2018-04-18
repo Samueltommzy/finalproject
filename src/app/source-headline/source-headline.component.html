@@ -1,0 +1,11 @@
+<div class="content" *ngIf="headline.length">
+  <ol>
+    <li *ngFor="let item of headline" class="post">
+     <p> Author:  {{ item.author }}</p>
+     <img [src] =  "item.urlToImage" class = "img"  alt="image">
+     <p>Description: {{ item.description }}</p>
+     <p> Source: {{item.source['name']}}</p>
+     <p><a href={{item.url}}>Click for more Details>>></a></p>
+    </li>
+  </ol>
+</div>
