@@ -1,0 +1,17 @@
+ <html>
+   <head> 
+     <meta name="viewport" content = "width=device-width,initial-scale = 1"
+   </head>
+ <body>
+ <div class="topnav" id="myTopnav">
+   <a class="home-link" uiSref = "news">
+    <img class="logo" src="../../assets/logo.jpg">
+  </a>
+    <a uiSref="news"  class= "active" >News Headlines</a>
+    <a uiSref ="sourceList">News sources</a>
+  <input type = "text" placeholder= "enter country code e.g,us,ch,cn" [(ngModel)] ="searchboxValue" />
+  <button type="submit" (click)="onentered()"><i class = "fa fa-search"></i></button>
+   <a href="javascript:void(0);" class="icon" style="font-size:15px;" (click)="myFunction()">&#9776;</a>
+</div>
+ </body>
+ </html> 
