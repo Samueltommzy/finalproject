@@ -13,5 +13,20 @@
   <button type="submit" (click)="onentered()"><i class = "fa fa-search"></i></button>
    <a href="javascript:void(0);" class="icon" style="font-size:15px;" (click)="myFunction()">&#9776;</a>
 </div>
+<script>
+   window.onscroll = function(){
+     myfunction();
+   }
+   var navbar = document.getElementById("myTopnav");
+   var sticky = navbar.offsetTop;
+   function myfunction(){
+     if( window.pageYOffset >= sticky){
+       navbar.classList.add("sticky");
+     }
+     else {
+       navbar.classList.remove("sticky");
+     }
+   }
+   </script>
  </body>
  </html> 
