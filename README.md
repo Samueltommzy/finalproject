@@ -33,5 +33,5 @@ Final project for ALC,google,Udacity Certification
 This app makes use of [newsAPI](newsapi.org) to get top news from various countries and sources and renders to the appropriate view component
 The app also implements service worker for offline functionality.This is only available for higher versions of browsers at the moment for example chrome v60 and above .....
 
-Live Demo on [heroku](https://alcheadlines/herokuapp.com)
+Live Demo on [heroku](https://alcheadlines.herokuapp.com)
 >>>>>>> d14ed4fc7b8938cd3c8b4b415f4eadf52b0daa8e
