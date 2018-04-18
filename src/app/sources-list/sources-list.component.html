@@ -1,0 +1,10 @@
+<div class="content" *ngIf = "sourceList.length">
+  <ol>
+    <li *ngFor="let source of sourceList" class="post">
+     <p> Source Name :  {{ source.name }}</p>
+     <p>Description : {{ source.description }}</p>
+     <p><a uiSref="app.sourceheadline" [uiParams]="{ id: source.id }">Click to view top headlines by {{source.name}}</a></p> 
+     <p><a target="__blank" href={{source.url}}>Click to visit source >>></a></p>
+    </li>
+  </ol>
+  </div>
