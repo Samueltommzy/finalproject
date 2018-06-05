@@ -25,6 +25,9 @@ import { Location } from'@angular/common';
 
 import { CheckForUpdateService } from './check-for-update.service';
 import { LogUpdateService } from './log-update.service';
+import { LoadingBarModule } from '@ngx-loading-bar/core';
+import { LoadingBarHttpModule } from '@ngx-loading-bar/http';
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 
 
 @NgModule({
@@ -43,6 +46,9 @@ import { LogUpdateService } from './log-update.service';
     BrowserModule,
     FormsModule,
     HttpModule,
+    LoadingBarModule,
+    LoadingBarHttpClientModule,
+    LoadingBarHttpModule,
     environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
   ],
   providers: [
